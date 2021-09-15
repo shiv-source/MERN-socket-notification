@@ -1,0 +1,44 @@
+{
+  "name": "socket-communication-backend",
+  "version": "1.0.0",
+  "description": "Real time socket notification in mern stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node server.js",
+    "dev": "set NODE_ENV=development && nodemon server.js",
+    "start:dev" : "NODE_ENV=development nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiv-source/MERN-socket-notification.git"
+  },
+  "keywords": [
+    "socket",
+    "socket io",
+    "react",
+    "node",
+    "express",
+    "realtime",
+    "notification"
+  ],
+  "author": "Shiv Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiv-source/MERN-socket-notification/issues"
+  },
+  "homepage": "https://github.com/shiv-source/MERN-socket-notification#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

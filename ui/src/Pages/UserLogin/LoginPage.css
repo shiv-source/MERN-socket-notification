@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&family=Urbanist:wght@100;200;300;400;500&display=swap");
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label {
+  font-family: "Urbanist", sans-serif;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  margin-top: 37px;
+  max-width: 525px;
+  min-height: 620px;
+  position: relative;
+  background: url(../../Images/ban.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 60px 70px 21px 70px;
+  background: rgb(48 27 113 / 72%);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #fff;
+  border-color: #1161ee;
+}
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.login-form .group {
+  margin-bottom: 15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 0;
+  background: rgb(255 255 255 / 30%);
+}
+.login-form .group input[data-type="password"] {
+  text-security: circle;
+  -webkit-text-security: circle;
+}
+.foot-lnk a {
+  color: #fff;
+}
+.login-form .group .label {
+  color: #dcd6d6;
+  font-size: 12px;
+}
+.login-form .group .button {
+  background: #252323;
+}
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+.login-form .group .check:checked + label .icon {
+  background: #1161ee;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.foot-lnk label {
+  color: #fff;
+}
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 20px 0 15px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.foot-lnk {
+  text-align: center;
+}
+
+/*otp start*/
+
+.otp-wrap {
+  width: 100%;
+  margin: auto;
+  margin-top: 140px;
+  max-width: 525px;
+  min-height: 359px;
+  position: relative;
+  background: url(../../Images/ban.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.otp-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 60px 70px 21px 70px;
+  background: rgb(48 27 113 / 72%);
+}
+
+.otp-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.otp-form .group .check:checked + label {
+  color: #fff;
+}
+.otp-form .group .check:checked + label .icon {
+  background: #1161ee;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.otp-label {
+  font-size: 25px;
+  color: #fff;
+}
+
+.otp-form .button {
+  background: #000 !important;
+  font-family: "Urbanist";
+  font-size: 17px;
+}
+
+.otp-form {
+  min-height: 345px;
+  padding-top: 20px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.otp-form .group {
+  margin-bottom: 15px;
+}
+.otp-form .group .label,
+.otp-form .group .input,
+.otp-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.otp-form .group .input,
+.otp-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 0;
+  background: rgb(255 255 255 / 30%);
+}
+.otp-form .group input[data-type="password"] {
+  text-security: circle;
+  -webkit-text-security: circle;
+}
+.foot-lnk a {
+  color: #fff;
+}
+.otp-form .group .label {
+  color: #dcd6d6;
+  font-size: 12px;
+}
+.login-form .group .button {
+  background: #252323;
+}
+.otp-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+.otp-form .group label .icon:before,
+.otp-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+.otp-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.otp-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.otp-form .group .check:checked + label {
+  color: #fff;
+}
+.otp-form .group .check:checked + label .icon {
+  background: #1161ee;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/*dashboard*/
+
+#container {
+  width: 80%;
+  height: 800px;
+  background: #eff3f7;
+  margin: 0 auto;
+  font-size: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 37px;
+  margin-bottom: 50px;
+}
+aside {
+  width: 260px;
+  height: 800px;
+  background-color: #000827;
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+}
+main {
+  width: 75%;
+  height: 800px;
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+aside header {
+  padding: 30px 20px;
+}
+aside input {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px 0 20px;
+  background-color: #5e616a;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+  background-repeat: no-repeat;
+  background-position: 170px;
+  background-size: 40px;
+}
+aside input::placeholder {
+  color: #fff;
+}
+aside ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow-y: scroll;
+  height: 690px;
+}
+aside li {
+  padding: 10px 0;
+}
+aside li:hover {
+  background-color: #5e616a;
+}
+
+aside li img {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 8px;
+}
+aside li div {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 12px;
+}
+aside li h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-top: 9px;
+}
+aside li h3 {
+  font-size: 12px;
+  color: #7e818a;
+  font-weight: normal;
+}
+
+.status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+.green {
+  background-color: #58b666;
+}
+.orange {
+  background-color: #ff725d;
+}
+.blue {
+  background-color: #6fbced;
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+main header {
+  height: 110px;
+  padding: 30px 20px 30px 40px;
+}
+main header > * {
+  display: inline-block;
+  vertical-align: top;
+}
+main header img:first-child {
+  border-radius: 50%;
+}
+main header img:last-child {
+  width: 24px;
+  margin-top: 8px;
+}
+main header div {
+  margin-left: 10px;
+  margin-right: 145px;
+}
+main header h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+main header h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7e818a;
+}
+
+#chat {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow-y: scroll;
+  height: 535px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+#chat li {
+  padding: 10px 30px;
+}
+#chat h2,
+#chat h3 {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+}
+#chat h3 {
+  color: #bbb;
+}
+#chat .entete {
+  margin-bottom: 5px;
+}
+#chat .message {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+  max-width: 90%;
+  display: inline-block;
+  text-align: left;
+  border-radius: 5px;
+}
+#chat .me {
+  text-align: right;
+}
+#chat .you .message {
+  background-color: #691436;
+}
+#chat .me .message {
+  background-color: #db9c4c;
+}
+#chat .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+}
+#chat .you .triangle {
+  border-color: transparent transparent #58b666 transparent;
+  margin-left: 15px;
+}
+#chat .me .triangle {
+  border-color: transparent transparent #6fbced transparent;
+  margin-left: 375px;
+}
+
+main footer {
+  height: 155px;
+  padding: 20px 30px 10px 20px;
+}
+main footer textarea {
+  resize: none;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 80px;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+main footer textarea::placeholder {
+  color: #ddd;
+}
+main footer img {
+  height: 30px;
+  cursor: pointer;
+}
+main footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6fbced;
+  vertical-align: top;
+  margin-left: 333px;
+  margin-top: 5px;
+  display: inline-block;
+}
